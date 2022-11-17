@@ -6,7 +6,7 @@
 #    By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/04 08:48:15 by jlima             #+#    #+#              #
-#    Updated: 2022/11/17 09:08:27 by jlima            ###   ########.fr        #
+#    Updated: 2022/11/17 11:08:20 by jlima            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ MAKE		= make
 DIR_SRCS	= ./srcs/
 DIR_OBJS	= ./srcs/
 
-SRCS_FILES	= main
+SRCS_FILES	= main HumanA HumanB Weapon
 
 OBJS		= $(addprefix $(DIR_OBJS), $(addsuffix .o, $(SRCS_FILES)))
 

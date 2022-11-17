@@ -6,7 +6,7 @@
 #    By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/04 08:48:15 by jlima             #+#    #+#              #
-#    Updated: 2022/11/17 09:08:27 by jlima            ###   ########.fr        #
+#    Updated: 2022/11/17 17:33:25 by jlima            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ CYAN	:= \033[36;1m
 WHITE	:= \033[37;1m
 RESET	:= \033[0m
 
-NAME 		= zombie
+NAME 		= replace
 
 INCLUDES	= -I includes
 
@@ -51,6 +51,7 @@ clean:
 
 fclean:		clean
 			rm -f $(NAME)	
+			rm -f ./srcs/*.replace
 
 re:			fclean all
 

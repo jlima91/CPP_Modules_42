@@ -6,7 +6,7 @@
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:59:48 by jlima             #+#    #+#             */
-/*   Updated: 2022/11/17 19:10:06 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/05 10:19:07 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,8 @@ private:
 	void warning( void );
 	void error( void );
 public:
-	//~Harl(void);
+	Harl();
+	~Harl();
 	void complain( std::string level );
 };
 

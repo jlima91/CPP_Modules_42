@@ -61,3 +61,19 @@ ClapTrap::~ClapTrap()
     std::cout << "ClapTrap " << this->name << " went on with its life." 
         << std::endl;
 }
+
+ClapTrap&   ClapTrap::operator=(const ClapTrap& copy) 
+{
+    this->name = copy.name;
+    this->hit_points = copy.hit_points;
+    this->energy_points = copy.energy_points;
+    this->damage = copy.damage;
+    std::cout << "ClapTrap " << this->name << " has been copied with copy assignment operator." << std::endl;
+    return *this;
+}
+
+ClapTrap::ClapTrap( const ClapTrap& copy ) 
+{
+    *this = copy;
+    std::cout << "ClapTrap " << this->name << " has been copied with copy constuctor." << std::endl;
+}

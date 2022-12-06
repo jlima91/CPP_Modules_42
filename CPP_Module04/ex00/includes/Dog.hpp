@@ -1,44 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:59:48 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/06 12:08:23 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/06 11:52:59 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifndef __CLAPTRAP__
-# define __CLAPTRAP__
+#ifndef __Dog__
+# define __Dog__
 
-# include <iostream>
+# include "Animal.hpp"
 
 
 // ************************************************************************** //
-//                               ClapTrap Class                               //
+//                               Dog Class                               //
 // ************************************************************************** //
 
-class ClapTrap
+class Dog : virtual public Animal
 {
 protected:
-	std::string name;
-	int hit_points;
-	int energy_points;
-	int damage;
-
-	ClapTrap();
+	Dog();
 
 public:
-	ClapTrap(std::string str);
-	~ClapTrap();
-	ClapTrap&   operator=(const ClapTrap& copy);
-	ClapTrap(const ClapTrap &copy);
-	void attack(const std::string& target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
+	Dog(std::string str);
+	~Dog();
 };
 
-#endif /* __CLAPTRAP__ */
+#endif /* __Dog__ */

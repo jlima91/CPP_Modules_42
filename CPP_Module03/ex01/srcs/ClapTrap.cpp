@@ -6,7 +6,7 @@
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:48:53 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/05 16:41:54 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/06 11:39:11 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,3 +56,20 @@ ClapTrap::~ClapTrap()
     std::cout << "ClapTrap " << this->name << " went on with its life." 
         << std::endl;
 }
+
+ClapTrap&   ClapTrap::operator=(const ClapTrap& copy) 
+{
+    this->name = copy.name;
+    this->hit_points = copy.hit_points;
+    this->energy_points = copy.energy_points;
+    this->damage = copy.damage;
+    std::cout << "ClapTrap " << this->name << " has been copied with copy assignment operator." << std::endl;
+    return *this;
+}
+
+ClapTrap::ClapTrap( const ClapTrap& copy ) 
+{
+    *this = copy;
+    std::cout << "ClapTrap " << this->name << " has been copied with copy constuctor." << std::endl;
+}
+

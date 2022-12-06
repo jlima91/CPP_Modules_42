@@ -6,7 +6,7 @@
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:59:48 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/05 17:19:09 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/06 12:08:34 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ protected:
 public:
 	ClapTrap(std::string str);
 	~ClapTrap();
+	ClapTrap&   operator=(const ClapTrap& copy);
+	ClapTrap(const ClapTrap &copy);
 	void attack(const std::string& target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);

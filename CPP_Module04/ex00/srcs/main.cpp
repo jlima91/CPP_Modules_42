@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
+/*   By: joao <joao@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 14:37:56 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/06 11:56:09 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/06 17:42:28 by joao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,10 @@
 
 int main()
 {
-	Cat pet1("FurrBall");
-	Dog pet2("Rex");
+	Cat pet1("Cat");
+	Dog pet2("Dog");
+	pet1.makeSound();
+	pet2.makeSound();
 
 	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
+/*   By: joao <joao@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:59:48 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/06 11:52:51 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/06 17:26:28 by joao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,13 @@
 class Cat : virtual public Animal
 {
 protected:
-	Cat();
+	
 
 public:
+	Cat();
 	Cat(std::string str);
 	~Cat();
-
+	void makeSound();
 };
 
 #endif /* __Cat__ */

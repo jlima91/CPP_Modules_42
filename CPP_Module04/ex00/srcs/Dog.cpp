@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
+/*   By: joao <joao@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:48:53 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/06 12:05:56 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/06 17:37:14 by joao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,15 @@
 
 Dog::Dog(std::string str): Animal(str)
 {
-    std::cout << "[ Animal ] " << this->name << " is a Dog" << std::endl;
+    std::cout << "[ Animal ] will server as a " << this->type << std::endl;
 }
 
 Dog::~Dog(void)
 {
-    std::cout << "[ Dog ] " << this->name << " will now enjoy retirement." 
-        << std::endl;
+    std::cout << "[ " << this->type << " ] dutti's over." << std::endl;
+}
+
+void Dog::makeSound()
+{
+    std::cout << "[ Dog ] barks!" << std::endl;
 }

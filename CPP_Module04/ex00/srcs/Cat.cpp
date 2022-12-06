@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
+/*   By: joao <joao@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:48:53 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/06 12:05:32 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/06 17:37:26 by joao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,15 @@
 
 Cat::Cat(std::string str): Animal(str)
 {
-    std::cout << "[ Animal ] " << this->name << " will server as a Cat" << std::endl;
+    std::cout << "[ Animal ] will server as a " << this->type << std::endl;
 }
 
 Cat::~Cat()
 {
-    std::cout << "[ Cat ] " << this->name << " dutti's over." 
-        << std::endl;
+    std::cout << "[ " << this->type << " ] dutti's over." << std::endl;
+}
+
+void Cat::makeSound()
+{
+    std::cout << "[ Cat ] meows!" << std::endl;
 }

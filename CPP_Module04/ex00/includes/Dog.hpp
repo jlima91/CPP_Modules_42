@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
+/*   By: joao <joao@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:59:48 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/06 11:52:59 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/06 17:19:51 by joao             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,13 @@
 class Dog : virtual public Animal
 {
 protected:
-	Dog();
+	
 
 public:
+	Dog();
 	Dog(std::string str);
 	~Dog();
+	void makeSound();
 };
 
 #endif /* __Dog__ */

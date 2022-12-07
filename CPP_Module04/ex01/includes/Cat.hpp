@@ -1,36 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:59:48 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/07 09:43:10 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/07 11:01:59 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifndef __Dog__
-# define __Dog__
+#ifndef __Cat__
+# define __Cat__
 
 # include "Animal.hpp"
+# include "Brain.hpp"
 
 
 // ************************************************************************** //
-//                               Dog Class                               //
+//                               Cat Class                       	          //
 // ************************************************************************** //
 
-class Dog :public Animal
+class Cat : public Animal
 {
 protected:
-	
+	Brain* brain;
 
 public:
-	Dog();
-	~Dog();
+	Cat();
+	~Cat();
+	Cat&   operator=(const Cat& copy);
+	Cat(const Cat &copy);
 	
 	void makeSound() const;
 };
 
-#endif /* __Dog__ */
+#endif /* __Cat__ */

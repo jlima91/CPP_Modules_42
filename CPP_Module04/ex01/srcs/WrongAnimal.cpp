@@ -10,39 +10,39 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
-Animal::Animal()
+WrongAnimal::WrongAnimal()
 {
-    std::cout << "[ Animal ] is born!" << std::endl;
+    std::cout << "[ WrongAnimal ] is born!" << std::endl;
 }
 
-Animal::~Animal()
+WrongAnimal::~WrongAnimal()
 {
-    std::cout << "[ Animal ] - " << this->type << " went on with its life." 
+    std::cout << "[ WrongAnimal ] - " << this->type << " went on with its life." 
         << std::endl;
 }
 
-Animal&   Animal::operator=(const Animal& copy) 
+WrongAnimal&   WrongAnimal::operator=(const WrongAnimal& copy) 
 {
-    std::cout << "[ Animal ]" << this->type << " has been copied with copy assignment operator." << std::endl;
+    std::cout << "[ WrongAnimal ]" << this->type << " has been copied with copy assignment operator." << std::endl;
     if (this != &copy)
         this->type = copy.type;
     return *this;
 }
 
-Animal::Animal( const Animal& copy ) 
+WrongAnimal::WrongAnimal( const WrongAnimal& copy ) 
 {
     *this = copy;
-    std::cout << "[ Animal ]" << this->type << " has been copied with copy constuctor." << std::endl;
+    std::cout << "[ WrongAnimal ]" << this->type << " has been copied with copy constuctor." << std::endl;
 }
 
-void Animal::makeSound() const
+void WrongAnimal::makeSound() const
 {
-    std::cout << "[ Animal ] undefined sounds!" << std::endl;
+    std::cout << "[ WrongAnimal ] wrong undefined sounds!" << std::endl;
 }
 
-std::string Animal::getType() const
+std::string WrongAnimal::getType() const
 {
    return (this->type); 
 }

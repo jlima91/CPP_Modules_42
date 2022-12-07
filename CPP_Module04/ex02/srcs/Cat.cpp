@@ -1,48 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                       :+:      :+:    :+:   */
+/*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:48:53 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/05 17:18:24 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/07 11:15:13 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Animal.hpp"
+#include "Cat.hpp"
 
-Animal::Animal()
+Cat::Cat(): Animal()
 {
-    std::cout << "[ Animal ] is born!" << std::endl;
+    this->type = "Cat";
+    this->brain = new Brain();
 }
 
-Animal::~Animal()
+Cat::~Cat()
 {
-    std::cout << "[ Animal ] - " << this->type << " went on with its life." 
-        << std::endl;
+    delete this->brain;
+    std::cout << "[ " << this->type << " ] dutti's over." << std::endl;
 }
 
-Animal&   Animal::operator=(const Animal& copy) 
+Cat&   Cat::operator=(const Cat& copy) 
 {
-    std::cout << "[ Animal ]" << this->type << " has been copied with copy assignment operator." << std::endl;
+    std::cout << "[ Cat ] has been copied with copy assignment operator." << std::endl;
     if (this != &copy)
+    {
         this->type = copy.type;
+        this->brain = new Brain(*copy.brain);
+    }
     return *this;
 }
 
-Animal::Animal( const Animal& copy ) 
+Cat::Cat( const Cat& copy ) 
 {
     *this = copy;
-    std::cout << "[ Animal ]" << this->type << " has been copied with copy constuctor." << std::endl;
+    std::cout << "[ Cat ] has been copied with copy constuctor." << std::endl;
 }
 
-void Animal::makeSound() const
+void Cat::makeSound() const
 {
-    std::cout << "[ Animal ] undefined sounds!" << std::endl;
-}
-
-std::string Animal::getType() const
-{
-   return (this->type); 
+    std::cout << "[ Cat ] meows!" << std::endl;
 }

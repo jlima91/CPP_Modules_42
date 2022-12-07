@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*   WrongCat.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:48:53 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/07 10:08:00 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/07 10:07:55 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "WrongCat.hpp"
 
-Dog::Dog(): Animal()
+WrongCat::WrongCat(): WrongAnimal()
 {
-    this->type = "Dog";
+    this->type = "WrongCat";
 }
 
-Dog::~Dog(void)
+WrongCat::~WrongCat()
 {
     std::cout << "[ " << this->type << " ] dutti's over." << std::endl;
 }
 
-void Dog::makeSound() const
+void WrongCat::makeSound() const
 {
-    std::cout << "[ Dog ] barks!" << std::endl;
+    std::cout << "[ WrongCat ] wrong meows!" << std::endl;
 }

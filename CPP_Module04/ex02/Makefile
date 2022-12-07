@@ -6,7 +6,7 @@
 #    By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/04 08:48:15 by jlima             #+#    #+#              #
-#    Updated: 2022/12/07 10:03:04 by jlima            ###   ########.fr        #
+#    Updated: 2022/12/07 10:29:42 by jlima            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ MAKE		= make
 DIR_SRCS	= ./srcs/
 DIR_OBJS	= ./srcs/
 
-SRCS_FILES	= main Animal Cat Dog WrongAnimal WrongCat
+SRCS_FILES	= main Animal Cat Dog WrongAnimal WrongCat Brain
 
 OBJS		= $(addprefix $(DIR_OBJS), $(addsuffix .o, $(SRCS_FILES)))
 

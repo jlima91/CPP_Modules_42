@@ -1,36 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.hpp                                            :+:      :+:    :+:   */
+/*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:59:48 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/07 09:43:10 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/07 10:30:17 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifndef __Dog__
-# define __Dog__
+#ifndef __Brain__
+# define __Brain__
 
-# include "Animal.hpp"
+# include <iostream>
 
 
 // ************************************************************************** //
-//                               Dog Class                               //
+//                               Brain Class                   	              //
 // ************************************************************************** //
 
-class Dog :public Animal
+class Brain
 {
 protected:
-	
+	std::string ideas[100];
 
 public:
-	Dog();
-	~Dog();
+	Brain();
+	~Brain();
+	Brain&   operator=(const Brain& copy);
+	Brain(const Brain &copy);
 	
-	void makeSound() const;
 };
 
-#endif /* __Dog__ */
+#endif /* __Brain__ */

@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: joao <joao@student.42.fr>                  +#+  +:+       +#+        */
+/*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:48:53 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/06 17:37:26 by joao             ###   ########.fr       */
+/*   Updated: 2022/12/07 10:08:05 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat(std::string str): Animal(str)
+Cat::Cat(): Animal()
 {
-    std::cout << "[ Animal ] will server as a " << this->type << std::endl;
+    this->type = "Cat";
 }
 
 Cat::~Cat()
@@ -22,7 +22,7 @@ Cat::~Cat()
     std::cout << "[ " << this->type << " ] dutti's over." << std::endl;
 }
 
-void Cat::makeSound()
+void Cat::makeSound() const
 {
     std::cout << "[ Cat ] meows!" << std::endl;
 }

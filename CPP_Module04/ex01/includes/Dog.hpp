@@ -6,7 +6,7 @@
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:59:48 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/07 09:43:10 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/07 11:02:22 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # define __Dog__
 
 # include "Animal.hpp"
+# include "Brain.hpp"
 
 
 // ************************************************************************** //
@@ -24,11 +25,13 @@
 class Dog :public Animal
 {
 protected:
-	
+	Brain* brain;
 
 public:
 	Dog();
 	~Dog();
+	Dog&   operator=(const Dog& copy);
+	Dog(const Dog &copy);
 	
 	void makeSound() const;
 };

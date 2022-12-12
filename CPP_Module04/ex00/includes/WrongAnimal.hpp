@@ -33,7 +33,7 @@ public:
 	WrongAnimal(const WrongAnimal &copy);
 
 	std::string getType() const;
-	virtual void makeSound() const;
+	void makeSound() const;
 };
 
 #endif /* __WrongAnimal__ */

@@ -1,39 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   AAnimal.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:59:48 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/08 09:28:46 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/06 11:41:19 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#ifndef __Cat__
-# define __Cat__
+#ifndef __WrongAAnimal__
+# define __WrongAAnimal__
 
-# include "AAnimal.hpp"
-# include "Brain.hpp"
+# include <iostream>
 
 
 // ************************************************************************** //
-//                               Cat Class                       	          //
+//                               WrongAAnimal Class                                 //
 // ************************************************************************** //
 
-class Cat : public AAnimal
+class WrongAAnimal
 {
 protected:
-	Brain* brain;
+	std::string type;
 
 public:
-	Cat();
-	~Cat();
-	Cat&   operator=(const Cat& copy);
-	Cat(const Cat &copy);
-	
-	void makeSound() const;
+	WrongAAnimal();
+	~WrongAAnimal();
+	WrongAAnimal&   operator=(const WrongAAnimal& copy);
+	WrongAAnimal(const WrongAAnimal &copy);
+
+	std::string getType() const;
+	virtual void makeSound() const;
 };
 
-#endif /* __Cat__ */
+#endif /* __WrongAAnimal__ */

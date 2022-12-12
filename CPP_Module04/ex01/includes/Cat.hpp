@@ -6,7 +6,7 @@
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:59:48 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/07 11:01:59 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/08 10:19:57 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ protected:
 
 public:
 	Cat();
-	~Cat();
+	virtual ~Cat();
 	Cat&   operator=(const Cat& copy);
 	Cat(const Cat &copy);
 	

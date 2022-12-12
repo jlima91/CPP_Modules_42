@@ -6,7 +6,7 @@
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/11 19:59:48 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/07 11:02:22 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/08 10:20:02 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ protected:
 
 public:
 	Dog();
-	~Dog();
+	virtual ~Dog();
 	Dog&   operator=(const Dog& copy);
 	Dog(const Dog &copy);
 	

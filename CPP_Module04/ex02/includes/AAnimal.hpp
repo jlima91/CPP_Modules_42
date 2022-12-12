@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                       :+:      :+:    :+:   */
+/*   AAnimal.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -11,29 +11,30 @@
 /* ************************************************************************** */
 
 
-#ifndef __WrongAnimal__
-# define __WrongAnimal__
+#ifndef __AAnimal__
+# define __AAnimal__
 
 # include <iostream>
 
 
 // ************************************************************************** //
-//                               WrongAnimal Class                                 //
+//                               AAnimal Class                                 //
 // ************************************************************************** //
 
-class WrongAnimal
+class AAnimal
 {
 protected:
 	std::string type;
 
 public:
-	WrongAnimal();
-	~WrongAnimal();
-	WrongAnimal&   operator=(const WrongAnimal& copy);
-	WrongAnimal(const WrongAnimal &copy);
+	AAnimal();
+	AAnimal(std::string str);
+	virtual ~AAnimal();
+	AAnimal&   operator=(const AAnimal& copy);
+	AAnimal(const AAnimal &copy);
 
 	std::string getType() const;
-	virtual void makeSound() const;
+	virtual void makeSound() const = 0;
 };
 
-#endif /* __WrongAnimal__ */
+#endif /* __AAnimal__ */

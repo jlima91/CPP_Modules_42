@@ -6,7 +6,7 @@
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 15:48:53 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/08 10:23:04 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/08 09:54:09 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,7 @@ Cat::~Cat()
 
 Cat&   Cat::operator=(const Cat& copy) 
 {
-    std::cout << "[ Cat ] has been copied with copy assignment operator."
-        << std::endl;
+    std::cout << "[ Cat ] has been copied with copy assignment operator." << std::endl;
     if (this != &copy)
     {
         this->type = copy.type;

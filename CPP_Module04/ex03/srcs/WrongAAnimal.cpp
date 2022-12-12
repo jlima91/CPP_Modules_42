@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.cpp                                       :+:      :+:    :+:   */
+/*   AAnimal.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,39 +10,39 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "WrongAnimal.hpp"
+#include "WrongAAnimal.hpp"
 
-WrongAnimal::WrongAnimal()
+WrongAAnimal::WrongAAnimal()
 {
-    std::cout << "[ WrongAnimal ] is born!" << std::endl;
+    std::cout << "[ WrongAAnimal ] is born!" << std::endl;
 }
 
-WrongAnimal::~WrongAnimal()
+WrongAAnimal::~WrongAAnimal()
 {
-    std::cout << "[ WrongAnimal ] - " << this->type << " went on with its life." 
+    std::cout << "[ WrongAAnimal ] - " << this->type << " went on with its life." 
         << std::endl;
 }
 
-WrongAnimal&   WrongAnimal::operator=(const WrongAnimal& copy) 
+WrongAAnimal&   WrongAAnimal::operator=(const WrongAAnimal& copy) 
 {
-    std::cout << "[ WrongAnimal ]" << this->type << " has been copied with copy assignment operator." << std::endl;
+    std::cout << "[ WrongAAnimal ]" << this->type << " has been copied with copy assignment operator." << std::endl;
     if (this != &copy)
         this->type = copy.type;
     return *this;
 }
 
-WrongAnimal::WrongAnimal( const WrongAnimal& copy ) 
+WrongAAnimal::WrongAAnimal( const WrongAAnimal& copy ) 
 {
     *this = copy;
-    std::cout << "[ WrongAnimal ]" << this->type << " has been copied with copy constuctor." << std::endl;
+    std::cout << "[ WrongAAnimal ]" << this->type << " has been copied with copy constuctor." << std::endl;
 }
 
-void WrongAnimal::makeSound() const
+void WrongAAnimal::makeSound() const
 {
-    std::cout << "[ WrongAnimal ] wrong undefined sounds!" << std::endl;
+    std::cout << "[ WrongAAnimal ] wrong undefined sounds!" << std::endl;
 }
 
-std::string WrongAnimal::getType() const
+std::string WrongAAnimal::getType() const
 {
    return (this->type); 
 }

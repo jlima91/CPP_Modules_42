@@ -6,7 +6,7 @@
 /*   By: jlima <jlima@student.42malaga.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/16 14:37:56 by jlima             #+#    #+#             */
-/*   Updated: 2022/12/08 10:21:50 by jlima            ###   ########.fr       */
+/*   Updated: 2022/12/08 09:28:33 by jlima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ int main( void )
 {
     std::cout << "--------------- AAnimal ---------------" << std::endl;
 
-    //Animal test;
     const AAnimal* j = new Dog();
     const AAnimal* i = new Cat();
 
